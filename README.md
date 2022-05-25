@@ -1,1 +1,1 @@
-SoftUni simple problems
+SOFTUNI SIMPLE PROBLEMS
