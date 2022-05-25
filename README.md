@@ -1,1 +1,0 @@
-###### SoftUni Simple Problems
