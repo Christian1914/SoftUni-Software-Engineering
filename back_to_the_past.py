@@ -21,6 +21,4 @@ if money >= 0:
 else:
     print(f"He will need {abs(total_money):.2f)} dollars to survive.")
 
-
-
 print(total_money)
