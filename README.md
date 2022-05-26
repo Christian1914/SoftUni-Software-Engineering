@@ -1,4 +1,7 @@
 # Courses from SoftUni
 
+<p align = "center">
 
-  ![image](https://user-images.githubusercontent.com/105857867/170464478-26e5b028-aaac-44c6-85df-2371811a6806.png | width=100)
+  <img src= "https://user-images.githubusercontent.com/105857867/170468034-bc33feec-bdcf-4e7f-99c0-5a3024264768.png"
+
+                                                                                                                              
