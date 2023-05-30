@@ -3,7 +3,7 @@
 
 <a href="https://softuni.bg/trainings/courses" rel="Courses"> ![SoftUni logo][logo] </a>
 
-[logo]: ![image](https://github.com/Christian1914/SoftUni-Software-Engineering/assets/105857867/2a762200-a8f0-4b0e-a6a0-df632da6be37) "Logo Title Text 2"
+[logo]: <img src="![university-default-og](https://github.com/Christian1914/SoftUni-Software-Engineering/assets/105857867/39324994-31ce-4105-a993-166f345cf964)" alt="Alt text" title="Optional title"> "Logo Title Text 2"
 
   
   
