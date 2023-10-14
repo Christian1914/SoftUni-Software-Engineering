@@ -136,3 +136,16 @@ a:active {
     width: 100%;
     height: auto;
 }
+
+/* FLOATS */
+
+.author-image {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.author {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
