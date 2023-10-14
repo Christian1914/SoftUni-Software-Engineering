@@ -157,3 +157,14 @@ a:active {
 .navigation {
     float: right;
 }
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+article {
+    width: 825px;
+    float: left;  
+}
