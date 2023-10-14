@@ -149,3 +149,11 @@ a:active {
     margin-top: 10px;
     margin-left: 20px;
 }
+
+.header {
+    float: left;
+}
+
+.navigation {
+    float: right;
+}
