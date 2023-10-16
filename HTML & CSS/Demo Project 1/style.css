@@ -181,3 +181,17 @@ footer {
 button {
     clear: both;
 }
+
+/* FLEXBOX */
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
