@@ -27,8 +27,16 @@
       }
 
       header {
-        background-color: orangered;
+        /* background-color: orangered; */
         height: 100vh;
+        position: relative;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(hero.jpg);
+        /* Затъмняване на снимката */
+        background-size: cover;
       }
 
       nav {
@@ -36,12 +44,31 @@
         font-weight: 700;
         display: flex;
         justify-content: space-between;
-        background-color: green;
+        /* background-color: green; */
+        padding-top: 25px;
+        color: #f7f7f7;
+      }
+
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        /* background-color: violet; */
+      }
+
+      .header-container-inner {
+        width: 50%;
+        /* Същото като padding-right: 600px; половината от елемента */
+        color: #f7f7f7;
       }
 
       h1 {
         font-size: 52px;
         margin-bottom: 32px;
+        line-height: 1.05;
       }
 
       p {
@@ -57,8 +84,9 @@
         background-color: #e67e22;
         color: #fff;
         text-decoration: none;
+        display: inline-block;
         padding: 16px 32px;
-        border-radius: 15px;
+        border-radius: 9px;
       }
 
       h2 {
@@ -68,7 +96,7 @@
 
       section {
         padding: 96px 0;
-        /* background-color: #f7f7f7; */
+        background-color: #f7f7f7;
       }
     </style>
   </head>
@@ -79,29 +107,31 @@
         <div>NAVIGATION</div>
       </nav>
 
-      <div class="container">
-        <h1>A healty meal delivered to your door, every single day!</h1>
-        <p>
-          The smart 365-days-per-year food subscription that will make you eat
-          healty again. Tailored to your personal tastes and nutritional needs
-        </p>
-        <a href="#" class="btn">Start eating well</a>
-      </div>
-
-      <section>
-        <div class="container">
-          <h2>Some random heading</h2>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A healty meal delivered to your door, every single day!</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-            commodi assumenda corporis aliquid, vitae, a autem veritatis fuga,
-            aperiam accusantium impedit ipsum dolorem unde. Velit recusandae hic
-            accusamus cum quaerat! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Maxime accusantium quod error nobis porro dolores
-            cupiditate quis incidunt, dolorem quia harum ea quidem et architecto
-            perferendis possimus repellendus eveniet ullam?
+            The smart 365-days-per-year food subscription that will make you eat
+            healty again. Tailored to your personal tastes and nutritional needs
           </p>
+          <a href="#" class="btn">Start eating well</a>
         </div>
-      </section>
+      </div>
     </header>
+
+    <section>
+      <div class="container">
+        <h2>Some random heading</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+          commodi assumenda corporis aliquid, vitae, a autem veritatis fuga,
+          aperiam accusantium impedit ipsum dolorem unde. Velit recusandae hic
+          accusamus cum quaerat! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Maxime accusantium quod error nobis porro dolores
+          cupiditate quis incidunt, dolorem quia harum ea quidem et architecto
+          perferendis possimus repellendus eveniet ullam?
+        </p>
+      </div>
+    </section>
   </body>
 </html>
