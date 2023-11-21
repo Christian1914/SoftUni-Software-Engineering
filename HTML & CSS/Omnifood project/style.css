@@ -213,3 +213,75 @@
 .step-image {
   width: 35%;
 }
+
+/****************************************/
+/* MEALS SECTION */
+/****************************************/
+
+.meal {
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.meal-heading {
+  text-align: center;
+}
+
+.section-meals {
+  padding: 96px 0;
+}
+
+.meal-tags {
+  margin-bottom: 12px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #51cf66;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.second-tag {
+  background-color: #ffd43b;
+}
+
+.meal-title {
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.meal-attribute {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.meal-icon {
+  height: 24px;
+  width: 24px;
+  color: #e67e22;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-content {
+  padding: 32px 48px 48px 48px;
+}
