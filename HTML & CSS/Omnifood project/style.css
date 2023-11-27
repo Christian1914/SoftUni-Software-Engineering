@@ -222,6 +222,12 @@
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.06);
 }
 
 .meal-heading {
@@ -234,6 +240,8 @@
 
 .meal-tags {
   margin-bottom: 12px;
+  display: flex;
+  gap: 4px;
 }
 
 .tag {
@@ -284,4 +292,112 @@
 
 .meal-content {
   padding: 32px 48px 48px 48px;
+}
+
+/****************************************/
+/* LIST DIETS SECTION */
+/****************************************/
+
+.list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 18px;
+
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header-list {
+  font-size: 30px;
+  margin-bottom: 48px;
+  color: #333333;
+}
+
+.checkmark {
+  color: #e67e22;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/****************************************/
+/* LINK -- SEE ALL RECIPES */
+/****************************************/
+
+.all-recipes {
+  text-align: center;
+  font-size: 18px;
+}
+
+/****************************************/
+/* TESTIMONIALS SECTION */
+/****************************************/
+
+.section-testimonials {
+  background-color: #fdf2e9;
+  display: grid;
+  /* Make it like they are percentage, now the right column will be smaller */
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 48px;
+  column-gap: 80px;
+}
+
+.headings {
+  padding: 96px;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.testimonial-img {
+  width: 64px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.gallery-item img {
+  display: block;
+  /* Making the images flexible */
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.gallery-item {
+  overflow: hidden;
 }
