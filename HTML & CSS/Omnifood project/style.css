@@ -504,7 +504,7 @@
 }
 
 .feature-text {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
 }
 
@@ -527,7 +527,7 @@
 /****************************************/
 
 .section-cta {
-  padding: 96px 0;
+  padding: 0px 0px 128px 0px;
 }
 
 .cta {
@@ -613,4 +613,38 @@
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 8px rgba(253, 242, 233, 0.5);
+}
+
+/****************************************/
+/* FOOTER SECTION */
+/****************************************/
+
+.footer {
+  padding: 96px 0;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 16px;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  color: #555;
 }
