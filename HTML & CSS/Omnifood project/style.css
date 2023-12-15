@@ -527,7 +527,8 @@
 /****************************************/
 
 .section-cta {
-  padding: 0px 0px 128px 0px;
+  /* top / right / bottom / left */
+  padding: 96px 0px 128px 0;
 }
 
 .cta {
@@ -620,13 +621,52 @@
 /****************************************/
 
 .footer {
-  padding: 96px 0;
+  padding: 128px 0;
+  border-top: 1px solid #eee;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.social-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
 }
 
 .footer-heading {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 24px;
 }
 
 .footer-nav {
@@ -644,7 +684,7 @@
   transition: all 0.3s;
 }
 
-.footer-link:link,
-.footer-link:visited {
+.footer-link:hover,
+.footer-link:active {
   color: #555;
 }
