@@ -8,23 +8,23 @@
   align-items: center;
   background-color: #fdf2e9;
 
-  height: 96px;
-  padding: 0 48px;
+  height: 9.6rem;
+  padding: 0 4.8rem;
 }
 
 .logo {
-  height: 22px;
+  height: 2.2rem;
 }
 
 /****************************************/
-/* HERO SECTION */
+/* NAVIGATION */
 /****************************************/
 
 .main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -32,8 +32,8 @@
   display: inline-block;
   text-decoration: none;
   color: #333;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 1.8rem;
   transition: all 0.3s;
 }
 
@@ -44,7 +44,7 @@
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
-  padding: 12px 24px;
+  padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
   background-color: #e67e22;
@@ -62,23 +62,23 @@
 
 .section-hero {
   background-color: #fdf2e9;
-  padding: 48px 0 96px 0;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero {
-  max-width: 1300px;
+  max-width: 130rem;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 96px;
+  gap: 9.6rem;
   align-items: center;
 }
 
 .hero-description {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.6;
-  margin-bottom: 48px;
+  margin-bottom: 4.8rem;
 }
 
 .hero-img {
@@ -87,9 +87,9 @@
 
 .delivered-meals {
   display: flex;
-  margin-top: 80px;
+  margin-top: 8rem;
   align-items: center;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 .delivered-images {
@@ -97,10 +97,10 @@
 }
 
 .delivered-images img {
-  height: 48px;
-  width: 48px;
+  height: 4.8rem;
+  width: 4.8rem;
   border-radius: 50%;
-  margin-right: -16px;
+  margin-right: -1.6rem;
   border: 3px solid #fdf2e9;
 }
 
@@ -109,7 +109,7 @@
 }
 
 .delivered-text {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
@@ -123,17 +123,17 @@
 /****************************************/
 
 .section-featured {
-  padding: 48px 0 32px 0;
+  padding: 4.8rem 0 3.2rem 0;
 }
 
 .heading-featured-in {
-  font-size: 14px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   color: #888;
   letter-spacing: 0.75px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .logos {
@@ -142,7 +142,7 @@
 }
 
 .logos img {
-  height: 32px;
+  height: 3.2rem;
   filter: brightness(0);
   opacity: 50%;
 }
@@ -152,18 +152,18 @@
 /****************************************/
 
 .section-how {
-  padding: 96px 0;
+  padding: 9.6rem 0;
 }
 
 .step-number {
-  font-size: 86px;
+  font-size: 8.6rem;
   font-weight: 600;
   color: #ddd;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
 .step-description {
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.8;
 }
 
@@ -219,7 +219,7 @@
 /****************************************/
 
 .meal {
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
@@ -235,11 +235,11 @@
 }
 
 .section-meals {
-  padding: 96px 0;
+  padding: 9.6rem 0;
 }
 
 .meal-tags {
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
   display: flex;
   gap: 4px;
 }
@@ -249,9 +249,9 @@
   background-color: #51cf66;
   color: #333;
   padding: 4px 8px;
-  border-radius: 20px;
+  border-radius: 2rem;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
@@ -260,29 +260,29 @@
 }
 
 .meal-title {
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #333;
   font-weight: 600;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 .meal-attributes {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .meal-attribute {
-  font-size: 18px;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 .meal-icon {
-  height: 24px;
-  width: 24px;
+  height: 2.4rem;
+  width: 2.4rem;
   color: #e67e22;
 }
 
@@ -291,7 +291,7 @@
 }
 
 .meal-content {
-  padding: 32px 48px 48px 48px;
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 /****************************************/
@@ -302,29 +302,29 @@
   display: flex;
   list-style: none;
   flex-direction: column;
-  gap: 18px;
+  gap: 1.8rem;
 
   justify-content: center;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
-.header-list {
-  font-size: 30px;
-  margin-bottom: 48px;
+.heading-tertiary {
+  font-size: 3rem;
+  margin-bottom: 4.8rem;
   color: #333333;
 }
 
 .checkmark {
   color: #e67e22;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .list li {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 /****************************************/
@@ -333,7 +333,7 @@
 
 .all-recipes {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 /****************************************/
@@ -351,12 +351,12 @@
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 48px;
-  column-gap: 80px;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
 }
 
 .headings {
-  padding: 96px;
+  padding: 9.6rem;
 }
 
 .headings {
@@ -365,14 +365,14 @@
 }
 
 .testimonial-text {
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.8;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 .testimonial-img {
-  width: 64px;
+  width: 6.4rem;
   border-radius: 50%;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .testimonial-name {
@@ -383,8 +383,8 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  padding: 16px;
+  gap: 1.6rem;
+  padding: 1.6rem;
 }
 
 .gallery-item img {
@@ -407,13 +407,13 @@
 /****************************************/
 
 .section-pricing {
-  padding: 96px 0;
+  padding: 9.6rem 0;
 }
 
 .pricing-plan {
   background-color: #fdf2e9;
   border-radius: 11px;
-  padding: 48px;
+  padding: 4.8rem;
   width: 75%;
   text-align: center;
 }
@@ -441,9 +441,9 @@
   right: -8%;
   background-color: #ffd43b;
   color: #333;
-  padding: 8px 32px;
+  padding: 8px 3.2rem;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 700;
   transform: rotate(45deg);
 }
@@ -455,36 +455,36 @@
 .plan-name {
   color: #cf711f;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.75;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 .plan-price {
-  font-size: 62px;
+  font-size: 6.2rem;
   font-weight: 600;
   color: #333;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .plan-price span {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 500;
   margin-right: 8px;
 }
 
 .plan-text {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.6;
   color: #6f6f6f;
   display: inline-block;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 .plan-sign-up {
   text-align: center;
-  margin-top: 48px;
+  margin-top: 4.8rem;
 }
 
 /* FEATURES */
@@ -493,7 +493,7 @@
   font-size: 1.6rem;
   line-height: 1.6;
   text-align: center;
-  margin-top: 48px;
+  margin-top: 4.8rem;
 }
 
 .feature-title {
@@ -504,22 +504,22 @@
 }
 
 .feature-text {
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.8;
 }
 
 .feature-icon {
-  height: 32px;
-  width: 32px;
-  margin-bottom: 32px;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
   color: #e67e22;
   background-color: #fdf2e9;
-  padding: 15px;
+  padding: 1.5rem;
   border-radius: 50%;
 }
 
 .padding {
-  padding: 96px 0;
+  padding: 9.6rem 3.2rem;
 }
 
 /****************************************/
@@ -528,33 +528,33 @@
 
 .section-cta {
   /* top / right / bottom / left */
-  padding: 96px 0px 128px 0;
+  padding: 9.6rem 0px 12.8rem 0;
 }
 
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-color: #e67e22;
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow: hidden;
 }
 
 .cta-text-box {
-  padding: 48px 64px 64px 64px;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
   color: #45260a;
 }
 
 .cta .heading-secondary {
   color: #45260a;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 .cta-text {
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.8;
-  margin-bottom: 48px;
+  margin-bottom: 4.8rem;
 }
 
 .cta-img-box {
@@ -572,22 +572,22 @@
 .cta-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 32px;
-  row-gap: 24px;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
 }
 
 .cta-form label {
   display: block;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
 .cta-form input,
 .cta-form select {
   width: 100%;
-  padding: 12px;
-  font-size: 18px;
+  padding: 1.2rem;
+  font-size: 1.8rem;
   border-radius: 9px;
   border: none;
   font-family: inherit;
@@ -604,7 +604,7 @@
 } */
 
 .cta-form button {
-  padding: 12px;
+  padding: 1.2rem;
   align-self: end;
   cursor: pointer;
   background-color: #45260a;
@@ -621,7 +621,7 @@
 /****************************************/
 
 .footer {
-  padding: 128px 0;
+  padding: 12.8rem 0;
   border-top: 1px solid #eee;
 }
 
@@ -632,54 +632,54 @@
 
 .footer-logo {
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 .social-links {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 2.4rem;
 }
 
 .social-icon {
-  height: 24px;
-  width: 24px;
+  height: 2.4rem;
+  width: 2.4rem;
 }
 
 .copyright {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #767676;
   line-height: 1.6;
   margin-top: auto;
 }
 
 .footer-heading {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 40px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
 }
 
 .contacts {
   font-style: normal;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
 .address {
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .footer-nav {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 2.4rem;
 }
 
 .footer-link:link,
 .footer-link:visited {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #767676;
   transition: all 0.3s;
 }
