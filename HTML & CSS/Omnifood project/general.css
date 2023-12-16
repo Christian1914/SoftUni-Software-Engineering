@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -70,15 +70,15 @@ body {
 /****************************************/
 
 .container {
-  max-width: 1200px;
-  padding: 0 32px;
+  max-width: 120rem;
+  padding: 0 3.2rem;
   margin: 0 auto;
 }
 
 .grid {
   display: grid;
-  column-gap: 64px;
-  row-gap: 96px;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .grid--2-cols {
@@ -101,7 +101,8 @@ body {
 }
 
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   color: #333;
   /* color: #2e1907; */
@@ -110,31 +111,31 @@ body {
 }
 
 .heading-primary {
-  font-size: 52px;
+  font-size: 5.2rem;
   line-height: 1.05;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 .heading-secondary {
-  font-size: 44px;
+  font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 96px;
+  margin-bottom: 9.6rem;
 }
 
 .heading-tertiary {
-  font-size: 30px;
+  font-size: 3rem;
   line-height: 1.2;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
   color: #333;
 }
 
 .subheading {
   display: block;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 500;
   color: #cf711f;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
 
@@ -143,9 +144,9 @@ body {
 .btn:visited {
   display: inline-block;
   text-decoration: none;
-  font-size: 20px;
-  font-weight: 700;
-  padding: 16px 32px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
   border-radius: 9px;
 
   /* only necessary for .btn */
@@ -189,7 +190,7 @@ body {
   background-color: #45260a;
   color: #fdf2e9;
   align-self: end;
-  padding: 12px;
+  padding: 1.2rem;
 }
 
 .btn--form:hover {
@@ -215,11 +216,11 @@ body {
 
 /* Helper class for the first button and is reusable on all kinds of elements */
 .margin-right {
-  margin-right: 16px !important;
+  margin-right: 1.6rem !important;
 }
 
 .margin-bottom-md {
-  margin-bottom: 48px !important;
+  margin-bottom: 4.8rem !important;
 }
 
 strong {
@@ -230,20 +231,27 @@ strong {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 .list-item {
-  font-size: 18px;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1.6rem;
   line-height: 1.2;
 }
 
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
 .list-icon {
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   color: #e67e22;
 }
 
