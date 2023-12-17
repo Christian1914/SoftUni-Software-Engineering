@@ -56,6 +56,8 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
+  /* Hiding the overflowing elements horizontally */
+  overflow-x: hidden;
 }
 
 body {
@@ -63,6 +65,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  /* Only works if there is nothing absolutely positioned in realation to body */
+  /* Hiding the overflowing elements horizontally */
+  overflow-x: hidden;
 }
 
 /****************************************/
@@ -92,6 +97,7 @@ body {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+
 .grid--5-cols {
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
