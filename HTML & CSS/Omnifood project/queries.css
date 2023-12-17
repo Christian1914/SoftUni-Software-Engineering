@@ -198,6 +198,54 @@ Instead, 1rem = 1em = 16px */
   }
 }
 
+/* BELOW 800px (Smaller tablets) */
+@media (max-width: 50em) {
+  .pricing-plan {
+    width: 100%;
+  }
+}
+
+/* BELOW 730px (Smaller tablets) */
+/* Transforming the grids that have 3 and 4 columns in to 2 columns */
+
+@media (max-width: 46em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .diets {
+    grid-column: -3 / -1;
+    /* We use justify-self cuz its  individual grid item and not grid container*/
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .grid--5-cols {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-col,
+  .address-col {
+    /* span these two cells in to three */
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    /* Span across 2 cells */
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+
 /* 
 - FONT SIZE SYSTEM (px)
 
