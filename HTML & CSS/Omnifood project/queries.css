@@ -74,8 +74,12 @@ Instead, 1rem = 1em = 16px */
     gap: 6.4rem;
   }
 
+  .hero-img {
+    width: 60%;
+  }
+
   .meal-title {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .delivered-meals {
@@ -98,6 +102,99 @@ Instead, 1rem = 1em = 16px */
 
   .meal-content {
     padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .list-pricing li {
+    text-align: left;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .section-cta {
+    /* padding: 9.6rem 0 12.8rem 0; */
+    padding: 4.8rem 0 12.8rem;
+  }
+
+  .padding {
+    padding: 9.6rem 3.2rem 0rem 3.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+
+  /* MOBILE NAV */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* How to put the element on the whole viewport */
+    width: 100%;
+    height: 100vh;
+    /* Horizontally */
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.5s;
+
+    /* Hide navigation */
+    /* Allows NO trnasitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
   }
 }
 
