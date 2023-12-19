@@ -140,6 +140,7 @@ Instead, 1rem = 1em = 16px */
   /* MOBILE NAV */
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
@@ -243,6 +244,91 @@ Instead, 1rem = 1em = 16px */
     /* Span across 2 cells */
     grid-column: span 2;
     margin-bottom: 3.2rem;
+  }
+}
+
+/* BELOW 560px (Mobile Phones) */
+@media (max-width: 35em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    /* TOP AND BOTTOM / SIDES */
+    padding: 2.4rem 1.6rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  /* Choosing one of the elements with nth-child and placing it in to another row or the grid */
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    /* Moving the element a liitle bit down verticaly - Y */
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .diets {
+    grid-column: 1 / span 1; /* Span the diets section across 1 column */
+    margin-top: 4.8rem; /* Add some top margin */
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr; /* Change the columns to one for small screens */
+    grid-template-rows: 1fr 2fr; /* Add this line to define two rows */
+  }
+  .cta-img-box {
+    height: 32rem;
+    order: -1;
+  }
+
+  .section-pricing {
+    padding-bottom: 3.2rem;
+  }
+
+  .section-meals {
+    padding: 4.8rem 0;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
   }
 }
 
