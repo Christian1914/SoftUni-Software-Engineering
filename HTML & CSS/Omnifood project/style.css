@@ -430,7 +430,7 @@
 /****************************************/
 
 .section-pricing {
-  padding: 9.6rem 0;
+  padding: 6.4rem 0;
 }
 
 .pricing-plan {
@@ -711,4 +711,32 @@
 .footer-link:hover,
 .footer-link:active {
   color: #555;
+}
+
+/* Go to top button */
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2rem;
+  background-color: rgb(241, 127, 26);
+  color: #555555;
+  border: none;
+  border-radius: 9px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #ffffff;
+
+  /* border: 3px solid #fff; */
+  /* Trick to add border inside the button */
+
+  box-shadow: inset 0 0 0 3px #f8f8f8;
 }
