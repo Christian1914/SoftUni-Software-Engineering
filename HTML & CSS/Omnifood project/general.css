@@ -58,6 +58,9 @@ html {
   font-size: 62.5%;
   /* Hiding the overflowing elements horizontally */
   overflow-x: hidden;
+
+  /* It does not support older versions of some browsers! */
+  /* scroll-behavior: smooth; */
 }
 
 body {
