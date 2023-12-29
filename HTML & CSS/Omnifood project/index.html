@@ -16,7 +16,7 @@
     <link rel="apple-touch" href="img/favicon_apple-touch.png" type="image/png" />
     <link rel="manifest" href="manifest.webmanifest" />
 
-    
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -86,7 +86,15 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img src="img/hero.png" class="hero-img" alt="woman eating" />
+
+            <picture>
+              <!-- Becouse some browsers did not support webp
+              The browser will decide which image to display -->
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero.png" type="image/png" />
+
+              <img src="img/hero.png" class="hero-img" alt="Woman enjoying food, meals in storage container and food bowls on a table" />
+            </picture>
           </div>
         </div>
       </section>
