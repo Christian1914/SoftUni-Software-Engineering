@@ -7,17 +7,21 @@ const initialItems = [
 ];
 
 function App() {
-  const [items, setItems] = useState(initialItems); // Use initialItems to set the initial state
+  const [items, setItems] = useState(initialItems);
 
   function handleAddItems(item) {
     setItems((prevItems) => [...prevItems, item]);
+  }
+
+  function handleRemoveItem(id) {
+    setItems((prevItems) => prevItems.filter((item) => item.id !== id));
   }
 
   return (
     <div className="app">
       <Logo />
       <Form onAddItems={handleAddItems} />
-      <PackingList items={items} />
+      <PackingList items={items} onRemoveItem={handleRemoveItem} />
       <Stats items={items} />
     </div>
   );
@@ -32,7 +36,6 @@ function Logo() {
 }
 
 function Form({ onAddItems }) {
-  // Destructure the onAddItems function from props
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
 
@@ -43,7 +46,7 @@ function Form({ onAddItems }) {
 
     if (!description) {
       alert("Add a description first!");
-      return; // Stop the function if there's no description
+      return;
     }
 
     const newItem = { id: Date.now(), description, quantity, packed: false };
@@ -77,37 +80,30 @@ function Form({ onAddItems }) {
   );
 }
 
-function PackingList({ items }) {
-  // Use items from props
+function PackingList({ items, onRemoveItem }) {
   return (
     <div className="list">
       <ul>
-        {items.map(
-          (
-            item // Use items from props to map
-          ) => (
-            <Item item={item} key={item.id} />
-          )
-        )}
+        {items.map((item) => (
+          <Item item={item} key={item.id} onRemoveItem={onRemoveItem} />
+        ))}
       </ul>
     </div>
   );
 }
 
-function Item({ item }) {
-  // This component is fine as it is
+function Item({ item, onRemoveItem }) {
   return (
     <li>
       <span style={item.packed ? { textDecoration: "line-through" } : {}}>
         {item.quantity} {item.description}
       </span>
-      <button>❌</button>
+      <button onClick={() => onRemoveItem(item.id)}>❌</button>
     </li>
   );
 }
 
 function Stats({ items }) {
-  // Calculate stats using items from props
   const packedItemsCount = items.filter((item) => item.packed).length;
   const totalItemsCount = items.length;
   const packedPercentage = totalItemsCount
