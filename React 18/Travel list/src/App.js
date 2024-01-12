@@ -7,12 +7,18 @@ const initialItems = [
 ];
 
 function App() {
+  const [items, setItems] = useState(initialItems); // Use initialItems to set the initial state
+
+  function handleAddItems(item) {
+    setItems((prevItems) => [...prevItems, item]);
+  }
+
   return (
     <div className="app">
       <Logo />
-      <Form />
-      <PackingList />
-      <Stats />
+      <Form onAddItems={handleAddItems} />
+      <PackingList items={items} />
+      <Stats items={items} />
     </div>
   );
 }
@@ -25,7 +31,8 @@ function Logo() {
   );
 }
 
-function Form() {
+function Form({ onAddItems }) {
+  // Destructure the onAddItems function from props
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
 
@@ -34,10 +41,13 @@ function Form() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    if (!description) alert("Add a description first!");
+    if (!description) {
+      alert("Add a description first!");
+      return; // Stop the function if there's no description
+    }
 
     const newItem = { id: Date.now(), description, quantity, packed: false };
-    console.log(newItem);
+    onAddItems(newItem);
 
     setDescription("");
     setQuantity(1);
@@ -67,19 +77,25 @@ function Form() {
   );
 }
 
-function PackingList() {
+function PackingList({ items }) {
+  // Use items from props
   return (
     <div className="list">
       <ul>
-        {initialItems.map((item) => (
-          <Item item={item} key={item.id} />
-        ))}
+        {items.map(
+          (
+            item // Use items from props to map
+          ) => (
+            <Item item={item} key={item.id} />
+          )
+        )}
       </ul>
     </div>
   );
 }
 
 function Item({ item }) {
+  // This component is fine as it is
   return (
     <li>
       <span style={item.packed ? { textDecoration: "line-through" } : {}}>
@@ -90,10 +106,20 @@ function Item({ item }) {
   );
 }
 
-function Stats() {
+function Stats({ items }) {
+  // Calculate stats using items from props
+  const packedItemsCount = items.filter((item) => item.packed).length;
+  const totalItemsCount = items.length;
+  const packedPercentage = totalItemsCount
+    ? ((packedItemsCount / totalItemsCount) * 100).toFixed(0)
+    : 0;
+
   return (
     <footer className="stats">
-      <em>👜 You have X items on your list, and you already packed X (X%)</em>
+      <em>
+        👜 You have {totalItemsCount} items on your list, and you already packed{" "}
+        {packedItemsCount} ({packedPercentage}%)
+      </em>
     </footer>
   );
 }
