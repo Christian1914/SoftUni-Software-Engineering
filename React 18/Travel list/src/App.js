@@ -13,9 +13,7 @@ function App() {
     setItems((prevItems) => [...prevItems, item]);
   }
 
-  function handleRemoveItem(id) {
-    setItems((prevItems) => prevItems.filter((item) => item.id !== id));
-  }
+  
 
   return (
     <div className="app">
